@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css"
+    />
+
+    <link rel="stylesheet" href="ranking.css" />
+
+    <link rel="stylesheet" href="../../css/nav.css" />
+
+    <title>Devhost</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div id="navbar">
+          <div id="logo" class="reverse">
+            <div
+              class="mobile-btn"
+              style="font-size: 30px; cursor: pointer; font-weight: bold"
+              onclick="openNav()"
+            >
+              &#9776;
+            </div>
+
+            <a href="../" style="text-decoration: none; color: #fff">
+              <div class="logo">Dev<span>Ho</span>st</div>
+            </a>
+          </div>
+
+          <div id="links">
+            <a href="../../index.html">Home</a>
+
+            <a href="ranking.html">SEO</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Mobile Menu -->
+
+      <div id="mySidenav" class="sidenav">
+        <a style="cursor: pointer" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+
+        <a href="/index.html">Home</a>
+
+        <a href="ranking.html">SEO</a>
+      </div>
+    </header>
+
+    <div class="card-principal">
+      <div
+        class="container shadow p-3 mb-5 bg-white rounded graph"
+        data-aos="fade-right"
+      >
+        <h3>USUÁRIOS NOS ÚLTIMOS 30 MINUTOS</h3>
+
+        <p id="userNumber">1000</p>
+
+        <h3>USUÁRIOS POR MINUTO</h3>
+
+        <p id="userM">1000</p>
+
+        <table
+          id="motion-effect-example-3"
+          class="charts-css column show-primary-axis show-5-secondary-axes data-spacing-5"
+        >
+          <caption>
+            Motion Effect Example #3
+          </caption>
+
+          <thead>
+            <tr>
+              <th scope="col">Year</th>
+
+              <th scope="col">Progress</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <th scope="row">2016</th>
+
+              <td style="--size: 0.2"><span class="data"> 20 </span></td>
+            </tr>
+
+            <tr>
+              <th scope="row">2017</th>
+
+              <td style="--size: 0.4"><span class="data"> 40 </span></td>
+            </tr>
+
+            <tr>
+              <th scope="row">2018</th>
+
+              <td style="--size: 0.6"><span class="data"> 60 </span></td>
+            </tr>
+
+            <tr>
+              <th scope="row">2019</th>
+
+              <td style="--size: 0.8"><span class="data"> 80 </span></td>
+            </tr>
+
+            <tr>
+              <th scope="row">2020</th>
+
+              <td style="--size: 1"><span class="data"> 100 </span></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>CATEGORIA DE DISPOSITIVOS NOS ÚLTIMOS MINUTOS</h3>
+
+        <div class="flex-wrapper">
+          <div class="single-chart">
+            <svg viewBox="0 0 36 36" class="circular-chart orange">
+              <path
+                class="circle-bg"
+                d="M18 2.0845
+
+                    a 15.9155 15.9155 0 0 1 0 31.831
+
+                    a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+
+              <path
+                class="circle"
+                stroke-dasharray="100, 100"
+                d="M18 2.0845
+
+                    a 15.9155 15.9155 0 0 1 0 31.831
+
+                    a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+
+              <text x="18" y="20.35" class="percentage">100%</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="container shadow p-3 mb-5 bg-white rounded element"
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+      >
+        <h1>Faça o seu site ser visto por <b>milhares</b> de pessoas</h1>
+
+        <div class="conteudo">
+          <div class="conteudo-1">
+            <img src="../imagens/winner.svg" alt="" />
+          </div>
+
+          <div class="conteudo-2">
+            <h2>
+              Acesso as principais técnicas utilizadas no
+              <img src="../imagens/google_logo.svg" alt="" />
+            </h2>
+
+            <div class="conhecer">
+              <div data-aos="zoom-in">
+                <p><i class="fas fa-check"></i>Descoberta de palavras-chave</p>
+
+                <p><i class="fas fa-check"></i>Auditoria do Site</p>
+
+                <p>
+                  <i class="fas fa-check"></i>Rastreamento de ranking diário
+                </p>
+              </div>
+            </div>
+
+            <div class="conhecer-button">
+              <a href="#planos"
+                ><button class="btn btn-primary">Conhecer Planos</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tecnicas">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm shadow p-3 mb-5 bg-white rounded">
+            <img src="../imagens/search-engine.svg" alt="" /><br />
+
+            <h2>Descoberta de palavras-chave</h2>
+
+            <p>
+              Encontre palavras-chave de acordo com o seu nicho de atuação, elas
+              que irão lhe mostrar para o mundo!
+            </p>
+          </div>
+
+          <div class="col-sm shadow p-3 mb-5 bg-white rounded centro">
+            <script src="https://cdn.lordicon.com//libs/frhvbuzj/lord-icon-2.0.2.js"></script>
+
+            <img src="../imagens/search.svg" alt="" /><br />
+
+            <h2>Auditoria do Site</h2>
+
+            <p>
+              Identificaremos os problemas de SEO do seu site, mostraremos para
+              você e por fim, resolveremos!
+            </p>
+          </div>
+
+          <div class="col-sm shadow p-3 mb-5 bg-white rounded">
+            <img src="../imagens/website.svg" alt="" /><br />
+
+            <h2>Rastreamento de ranking diário</h2>
+
+            <p>
+              veja o quando cresce diariamente, locais que mais acessam o seu
+              site, horários de pico e se são dispositivos mobiles ou Desktop.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="corpo">
+      <div class="container">
+        <h2 id="planos">PLANOS</h2>
+
+        <div class="pricing-table-wrapper">
+          <ul class="pricing-table">
+            <li class="pricing-table__item">
+              <img
+                src="../imagens/plus.svg"
+                alt=""
+                class="pricing-table__img"
+              />
+
+              <h3 class="pricing-table__title">PLUS</h3>
+
+              <p class="pricing-table__description">
+                <span class="pricing-table__tagline">Cresça Aqui</span>
+
+                <span class="pricing-table__price">R$ 1,500</span>
+
+                <span class="pricing-table__label"> Era <s>2.000</s></span>
+
+                <span class="pricing-table__save">Economia de 25%</span>
+              </p>
+
+              <a
+                href="https://api.whatsapp.com/send?phone=556196509385&text=Tenho%20interesse%20em%20deixar%20o%20meu%20site%20Top%20nas%20pesquisas%3A%20Plano%20Plus"
+                class="pricing-table__button"
+                >continue</a
+              >
+            </li>
+
+            <li
+              class="pricing-table__item pricing-table__item--popular"
+              data-popular="Popular"
+            >
+              <img
+                src="../imagens/profissional.svg"
+                alt=""
+                class="pricing-table__img"
+              />
+
+              <h3 class="pricing-table__title">PROFISSIONAL</h3>
+
+              <p class="pricing-table__description">
+                <span class="pricing-table__tagline"
+                  >profissinalize o seu negócio na web</span
+                >
+
+                <span class="pricing-table__price">R$ 2,500</span>
+
+                <span class="pricing-table__label"> Era <s>3.000</s></span>
+
+                <span class="pricing-table__save">Economia de 16.6%</span>
+              </p>
+
+              <a
+                href="https://api.whatsapp.com/send?phone=556196509385&text=Tenho%20interesse%20em%20deixar%20o%20meu%20site%20Top%20nas%20pesquisas%3A%20Plano%20Profissional"
+                class="pricing-table__button"
+                >continue</a
+              >
+            </li>
+
+            <li class="pricing-table__item">
+              <img
+                src="../imagens/premium.svg"
+                alt=""
+                class="pricing-table__img"
+              />
+
+              <h3 class="pricing-table__title">PREMIUM</h3>
+
+              <p class="pricing-table__description">
+                <span class="pricing-table__tagline"
+                  >Seja Premium e apareça para o mundo</span
+                >
+
+                <span class="pricing-table__price">R$ 4,000</span>
+
+                <span class="pricing-table__label"> Era <s>5.000</s></span>
+
+                <span class="pricing-table__save">Economia de 20%</span>
+              </p>
+
+              <a
+                href="https://api.whatsapp.com/send?phone=556196509385&text=Tenho%20interesse%20em%20deixar%20o%20meu%20site%20Top%20nas%20pesquisas%3A%20Plano%20Premium"
+                class="pricing-table__button"
+                >continue</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="table-responsive">
+          <table class="table">
+            <caption>
+              Serviços
+            </caption>
+
+            <thead>
+              <tr>
+                <th scope="col" class="he">#</th>
+
+                <th scope="col">PLUS</th>
+
+                <th scope="col">PROFISSIONAL</th>
+
+                <th scope="col">PREMIUM</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <th scope="row" class="he">Relatório</th>
+
+                <td>Mensal</td>
+
+                <td>Quinzenal</td>
+
+                <td>Diário</td>
+              </tr>
+
+              <tr>
+                <th scope="row" class="he">Validade do plano</th>
+
+                <td>1 mês</td>
+
+                <td>2 meses</td>
+
+                <td>3 meses</td>
+              </tr>
+
+              <tr>
+                <th scope="row" class="he">Acessos por minuto</th>
+
+                <td>100x</td>
+
+                <td>200x</td>
+
+                <td>300x</td>
+              </tr>
+
+              <tr>
+                <th scope="row" class="he">Descoberta de palavras-chave</th>
+
+                <td>
+                  <i class="fas fa-check-circle" style="color: green"></i>
+                </td>
+
+                <td>
+                  <i class="fas fa-check-circle" style="color: green"></i>
+                </td>
+
+                <td>
+                  <i class="fas fa-check-circle" style="color: green"></i>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row" class="he">Auditoria do Site</th>
+
+                <td>
+                  <i class="fas fa-check-circle" style="color: green"></i>
+                </td>
+
+                <td>
+                  <i class="fas fa-check-circle" style="color: green"></i>
+                </td>
+
+                <td>
+                  <i class="fas fa-check-circle" style="color: green"></i>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row" class="he">Rastreamento de ranking diário</th>
+
+                <td><i class="fas fa-times"></i></td>
+
+                <td>
+                  <i class="fas fa-check-circle" style="color: green"></i>
+                </td>
+
+                <td>
+                  <i class="fas fa-check-circle" style="color: green"></i>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div
+        class="text-center text-light p-3"
+        style="background-color: rgb(0, 0, 0)"
+      >
+        © 2021 Copyright: DevHost
+      </div>
+    </footer>
+
+    <script src="../../script/nav.js"></script>
+
+    <script src="../../script/script.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      window.rwbp = {
+        email: "alexifb1985@gmail.com",
+        phone: "+556196509385",
+        message: "Solicite já os serviços da devHost",
+      };
+    </script>
+
+    <script
+      defer
+      async
+      src="https://duz4dqsaqembt.cloudfront.net/client/whats.js"
+    ></script>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
